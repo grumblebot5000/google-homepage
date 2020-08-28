@@ -1,3 +1,125 @@
-img {
-    background: red;
-}
+#viewport{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	width: 100%;
+	min-height: 100vh;
+	}
+body{
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	}
+	header{
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		margin: 5px;
+		}
+			header a{
+			font-family: arial, sans-serif;
+			font-size: 13px;
+			color: rgba(0, 0, 0, 0.87);
+			padding: 12px;
+			}
+		header a:link{
+			text-decoration: none;
+			}
+
+		#header-side{
+			flex:2 0 0;
+			}
+		.waffle-icon{
+			background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+			background-position: -132px -38px;
+			background-position-x: -134.5px;
+			background-position-y: -42px;
+			background-size: 528px 68px
+		}
+		#waff-waff{
+			color: #727272;
+			align-self: center;
+			margin-right: 1em;
+		}
+		.sign-in{
+			color: white;
+			margin-top: 2px;
+			margin-bottom: 2px;
+			background-image: -moz-linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234));
+		}
+
+	main{
+		margin-top: 7em;
+		margin-bottom: 2em;
+		flex: 1;
+		}
+		main div{
+			text-align: center;
+		}
+		main div input{
+			width: 527px;
+			height: 34px;
+			padding-left: 12px;
+		}
+		#search-container{
+			border: 3px solid #f2f2f2;
+			border-radius: 30px 30px 30px 30px;
+			padding: 5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-content: center;
+			width: 550px;
+			margin: auto;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		#search-container:hover{
+			box-shadow: 5px 5px 34px -23px rgba(95,170,227,1);
+		}
+		#mag-glass{
+			height: 24px;
+			width: 24px;
+			padding-left: 10px;
+			bottom: 0;
+			align-self: center;
+		}
+		input {
+			border: none;
+			outline: none;
+			line-height: 16px;
+		}
+		button{
+			border: 1px solid #f2f2f2;
+			background-color: #f2f2f2;
+			color:#5F6368;
+			font-family: arial,sans-serif;
+			font-size: 14px;
+			margin: 11px 4px;
+			padding: 0 16px;
+			line-height: 27px;
+			height: 36px;
+			min-width: 54px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+	footer{
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+		flex-shrink: 0;
+		background-color: #f2f2f2;
+		}
+		footer a{
+			font-family: arial, sans-serif;
+			font-size: 13px;
+			color: rgba(0, 0, 0, 0.87);
+			padding: 12px;
+		}
+		footer a:link{
+			text-decoration: none;
+		}

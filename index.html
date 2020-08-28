@@ -1,67 +1,42 @@
 <!DOCTYPE html>
-<style>
-    .search-buttons {
-        font-family: arial, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        height: 36px;
-        line-height: 27px;
-        color: #5F6368;
-        display: inline-block;
-        align-items: flex-start;
-        width: 127.406px;
-    }
-
-    #goo-buttons {
-        columns: 2em 2;
-        column-gap: 2%;
-        margin: auto;
-    }
-
-    .search-box{
-        width: 35%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        height: 30px;
-        text-align: left;
-        align-items: center;
-        border-radius: 40px;
-        background-image: url(small-magnifying-glass.gif);
-        background-repeat: no-repeat;
-        background-position: center left;
-        padding-left: 20px;
-        padding-right: 10px;
-
-    }
-
-    .center-element {
-        margin: auto;
-        width: 50%;
-        text-align: center;
-        align-content: center;
-    }
-
-    .flex-container {
-        display: flex;
-        justify-content: center;
-/*        align-items: center;
-*/    }
-
-</style>
-
-<html>
     <head>
         <title>google-test</title>
-    <body>
-        <div class="center-element">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        </div>
-        <div class="flex-container">
-           <input class="search-box" type="text" id="search-box" required>
-        </div>
-        <div id="goo-buttons" class="flex-container" >
-           <button class="search-buttons">Google Search</button>
-           <button class="search-buttons">I'm Feeling Lucky</button>
-        </div>
-    </body>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+<html>
+	<div id="viewport">
+	<body>
+		<header>
+			<a href="">About</a>
+			<a href="">Store</a>
+			<div id="header-side"></div>
+			<a href="">Gmail</a>
+			<a href="">Images</a>
+			<a id="waff-waff" class="waffle-icon" href=""></a>
+			<a class="sign-in" href=""><strong>Sign In</strong></a>
+		</header>
+		<main>
+			<div>
+				<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+			</div>
+			<div id="search-container">
+				<img id="mag-glass" src="../files/small-magnifying-glass.gif">
+				<input type="text" name="">
+			</div>
+			<div>
+				<button>Google Search</button>
+				<button>I'm Feeling Lucky</button>
+			</div>
+		</main>
+		<footer>
+			<a href="">Advertising</a>
+			<a href="">Business</a>
+			<a href="">How Search Works</a>
+			<div id="header-side"></div>
+			<a href="">Privacy</a>
+			<a href="">Terms</a>
+			<a href="">Settings</a>
+		</footer>
+	</body> 
+	</div>
 </html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+    #page-container {
+        position: relative;
+        min-height: 100%;
+    }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;
+    }
+
+    .grid-container-top {
+        display: grid;
+        grid-template-columns: 3em 3em auto 3em 3em;
+
+    }
+
+    .grid-container-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, auto) 1fr repeat(3, auto);
+
+    }
+
+    .grid-item {
+        color: #5F6368;
+        text-align: left;
+        word-wrap: none;
+    }
+
+      .grid-item-bottom {
+        color: #5F6368;
+        text-align: left;
+        word-wrap: none;
+    }
+
+/*    #footer {
+        background-color: lightgray;
+        width: 100%
+        height: 2.5rem;
+    }*/ 
+/*   footer div a {
+        border-style: solid;
+        border-color: cyan;
+        border-width: 4px;
+    }*/
+
+     a {
+        font-family: arial, sans-serif;
+        font-style: normal;
+        font-size: 13px;
+        font-weight: 400;
+/*        padding: 8px;
+*/    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-buttons {
+        font-family: arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        height: 36px;
+        line-height: 27px;
+        color: #5F6368;
+        display: inline-block;
+        align-items: flex-start;
+        width: 127.406px;
+    }
+
+    #goo-buttons {
+        columns: 2em 2;
+        column-gap: 2%;
+        margin: auto;
+    }
+
+    .search-box{
+        width: 35%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 30px;
+        text-align: left;
+        align-items: center;
+        border-radius: 40px;
+        background-image: url(small-magnifying-glass.gif);
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-left: 20px;
+        padding-right: 10px;
+
+    }
+
+    .center-element {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        align-content: center;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        height: 100%;
+        margin-top: auto;
+        background-color: #DFE0E1;
+/*        height: 2em;
+*/    }
+
+    #sides {
+        color: #5F6368;
+        flex: .5 1 auto;
+        justify-content: center;
+        padding: 5px 0px 5px 0px;
+    }
+
+    #center{
+        flex: 8 1 0;
+    }
+
+</style>
+
+
+    
+        <title>google-test</title>
+    </head>
+    <body><header>
+        <div class="grid-container-top">
+            <a class="grid-item" href="">About</a>
+            <a class="grid-item" href="">Store</a>
+            <span></span>
+            <a class="grid-item" href="">Gmail</a>
+            <a class="grid-item" href="">Images</a>            
+        </div>
+    </header>
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.12'><\/script>".replace("HOST", location.hostname));
+//]]></script><script async="" src="google-test_files/browser-sync-client.js"></script>
+
+        <div id="page-container">
+            <div class="center-element">
+                <img style="padding-top: 15px;" src="google-test_files/googlelogo_color_272x92dp.png">
+            </div>
+            <div class="flex-container">
+               <input class="search-box" type="text" id="search-box" required="">
+            </div>
+            <div id="goo-buttons" class="flex-container">
+               <button class="search-buttons">Google Search</button>
+               <button class="search-buttons">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <div class="footer">
+                <a id="sides" href="">Advertising</a>
+                <a id="sides" href="">Business</a>
+                <a id="sides" href="">How Search Works</a>
+                <span id="center"></span>
+                <a id="sides" href="">Privacy</a>
+                <a id="sides" href="">Terms</a>
+                <a id="sides" href="">Settings</a>
+        </div>
+    
+</body></html>
